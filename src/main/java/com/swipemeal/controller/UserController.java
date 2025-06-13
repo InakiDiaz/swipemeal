@@ -24,10 +24,7 @@ public class UserController {
 
         User saved = userService.save(user);
 
-        UserDTO dto = UserDTO.builder()
-                .id(saved.getId())
-                .username(saved.getUsername())
-                .build();
+        UserDTO dto = new UserDTO(saved);
 
         return ResponseEntity.ok(dto);
     }
@@ -35,11 +32,20 @@ public class UserController {
     @GetMapping("/{id}")
     public ResponseEntity<UserDTO> getUser(@PathVariable Long id) {
         User user = userService.findById(id);
-        UserDTO dto = UserDTO.builder()
-                .id(user.getId())
-                .username(user.getUsername())
-                .build();
+        UserDTO dto = new UserDTO(user);
 
         return ResponseEntity.ok(dto);
     }
+
+    @GetMapping("/me")
+    public ResponseEntity<UserDTO> getCurrentUser() {
+        String username = org.springframework.security.core.context.SecurityContextHolder
+                .getContext()
+                .getAuthentication()
+                .getName();
+
+        User user = userService.findByUsername(username);
+        return ResponseEntity.ok(new UserDTO(user));
+    }
 }
+
