@@ -1,0 +1,192 @@
+Listado de rutas de carpetas para el volumen Windows
+El número de serie del volumen es 9A92-D5CC
+C:.
+¦   .gitattributes
+¦   .gitignore
+¦   estructura.txt
+¦   HELP.md
+¦   mvnw
+¦   mvnw.cmd
+¦   pom.xml
+¦   
++---.idea
+¦       .gitignore
+¦       compiler.xml
+¦       encodings.xml
+¦       jarRepositories.xml
+¦       misc.xml
+¦       workspace.xml
+¦       
++---.mvn
+¦   +---wrapper
+¦           maven-wrapper.properties
+¦           
++---src
+¦   +---main
+¦   ¦   +---java
+¦   ¦   ¦   +---com
+¦   ¦   ¦       +---swipemeal
+¦   ¦   ¦           ¦   SwipeMealApplication.java
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---config
+¦   ¦   ¦           ¦       AppConfig.java
+¦   ¦   ¦           ¦       SecurityConfig.java
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---controller
+¦   ¦   ¦           ¦       AuthController.java
+¦   ¦   ¦           ¦       CategoryController.java
+¦   ¦   ¦           ¦       DietTypeController.java
+¦   ¦   ¦           ¦       IngredientController.java
+¦   ¦   ¦           ¦       UserController.java
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---dto
+¦   ¦   ¦           ¦   ¦   CategoryDTO.java
+¦   ¦   ¦           ¦   ¦   CreateCategoryRequest.java
+¦   ¦   ¦           ¦   ¦   CreateDietTypeRequest.java
+¦   ¦   ¦           ¦   ¦   CreateIngredientRequest.java
+¦   ¦   ¦           ¦   ¦   CreateUserRequest.java
+¦   ¦   ¦           ¦   ¦   DietTypeDTO.java
+¦   ¦   ¦           ¦   ¦   FilterPreferenceDTO.java
+¦   ¦   ¦           ¦   ¦   IngredientDTO.java
+¦   ¦   ¦           ¦   ¦   RecipeDTO.java
+¦   ¦   ¦           ¦   ¦   UserDTO.java
+¦   ¦   ¦           ¦   ¦   
+¦   ¦   ¦           ¦   +---auth
+¦   ¦   ¦           ¦           AuthRequest.java
+¦   ¦   ¦           ¦           AuthResponse.java
+¦   ¦   ¦           ¦           RegisterRequest.java
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---exception
+¦   ¦   ¦           ¦       GlobalExceptionHandler.java
+¦   ¦   ¦           ¦       NotFoundException.java
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---model
+¦   ¦   ¦           ¦       Category.java
+¦   ¦   ¦           ¦       DietType.java
+¦   ¦   ¦           ¦       FilterPreference.java
+¦   ¦   ¦           ¦       Ingredient.java
+¦   ¦   ¦           ¦       Recipe.java
+¦   ¦   ¦           ¦       Role.java
+¦   ¦   ¦           ¦       User.java
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---repository
+¦   ¦   ¦           ¦       CategoryRepository.java
+¦   ¦   ¦           ¦       DietTypeRepository.java
+¦   ¦   ¦           ¦       FilterPreferenceRepository.java
+¦   ¦   ¦           ¦       IngredientRepository.java
+¦   ¦   ¦           ¦       RecipeRepository.java
+¦   ¦   ¦           ¦       UserRepository.java
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---security
+¦   ¦   ¦           ¦       CustomAuthenticationProvider.java
+¦   ¦   ¦           ¦       JwtAuthenticationFilter.java
+¦   ¦   ¦           ¦       JwtUtils.java
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---service
+¦   ¦   ¦           ¦       AuthenticationService.java
+¦   ¦   ¦           ¦       CategoryService.java
+¦   ¦   ¦           ¦       DietTypeService.java
+¦   ¦   ¦           ¦       IngredientService.java
+¦   ¦   ¦           ¦       RecipeService.java
+¦   ¦   ¦           ¦       UserService.java
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---swipemeal
+¦   ¦   +---resources
+¦   ¦       ¦   application.properties
+¦   ¦       ¦   
+¦   ¦       +---static
+¦   ¦       +---templates
+¦   +---test
+¦       +---java
+¦           +---com
+¦               +---swipemeal
+¦                       SwipeMealApplicationTests.java
+¦                       
++---target
+    +---classes
+    ¦   ¦   application.properties
+    ¦   ¦   
+    ¦   +---com
+    ¦       +---swipemeal
+    ¦           ¦   SwipeMealApplication.class
+    ¦           ¦   
+    ¦           +---config
+    ¦           ¦       AppConfig.class
+    ¦           ¦       SecurityConfig.class
+    ¦           ¦       
+    ¦           +---controller
+    ¦           ¦       AuthController.class
+    ¦           ¦       CategoryController.class
+    ¦           ¦       DietTypeController.class
+    ¦           ¦       IngredientController.class
+    ¦           ¦       UserController.class
+    ¦           ¦       
+    ¦           +---dto
+    ¦           ¦   ¦   CategoryDTO$CategoryDTOBuilder.class
+    ¦           ¦   ¦   CategoryDTO.class
+    ¦           ¦   ¦   CreateCategoryRequest$CreateCategoryRequestBuilder.class
+    ¦           ¦   ¦   CreateCategoryRequest.class
+    ¦           ¦   ¦   CreateDietTypeRequest$CreateDietTypeRequestBuilder.class
+    ¦           ¦   ¦   CreateDietTypeRequest.class
+    ¦           ¦   ¦   CreateIngredientRequest$CreateIngredientRequestBuilder.class
+    ¦           ¦   ¦   CreateIngredientRequest.class
+    ¦           ¦   ¦   CreateUserRequest$CreateUserRequestBuilder.class
+    ¦           ¦   ¦   CreateUserRequest.class
+    ¦           ¦   ¦   DietTypeDTO$DietTypeDTOBuilder.class
+    ¦           ¦   ¦   DietTypeDTO.class
+    ¦           ¦   ¦   FilterPreferenceDTO$FilterPreferenceDTOBuilder.class
+    ¦           ¦   ¦   FilterPreferenceDTO.class
+    ¦           ¦   ¦   IngredientDTO$IngredientDTOBuilder.class
+    ¦           ¦   ¦   IngredientDTO.class
+    ¦           ¦   ¦   RecipeDTO$RecipeDTOBuilder.class
+    ¦           ¦   ¦   RecipeDTO.class
+    ¦           ¦   ¦   UserDTO$UserDTOBuilder.class
+    ¦           ¦   ¦   UserDTO.class
+    ¦           ¦   ¦   
+    ¦           ¦   +---auth
+    ¦           ¦           AuthRequest.class
+    ¦           ¦           AuthResponse.class
+    ¦           ¦           RegisterRequest.class
+    ¦           ¦           
+    ¦           +---exception
+    ¦           ¦       GlobalExceptionHandler.class
+    ¦           ¦       NotFoundException.class
+    ¦           ¦       
+    ¦           +---model
+    ¦           ¦       Category$CategoryBuilder.class
+    ¦           ¦       Category.class
+    ¦           ¦       DietType$DietTypeBuilder.class
+    ¦           ¦       DietType.class
+    ¦           ¦       FilterPreference$FilterPreferenceBuilder.class
+    ¦           ¦       FilterPreference.class
+    ¦           ¦       Ingredient$IngredientBuilder.class
+    ¦           ¦       Ingredient.class
+    ¦           ¦       Recipe$RecipeBuilder.class
+    ¦           ¦       Recipe.class
+    ¦           ¦       Role.class
+    ¦           ¦       User$UserBuilder.class
+    ¦           ¦       User.class
+    ¦           ¦       
+    ¦           +---repository
+    ¦           ¦       CategoryRepository.class
+    ¦           ¦       DietTypeRepository.class
+    ¦           ¦       FilterPreferenceRepository.class
+    ¦           ¦       IngredientRepository.class
+    ¦           ¦       RecipeRepository.class
+    ¦           ¦       UserRepository.class
+    ¦           ¦       
+    ¦           +---security
+    ¦           ¦       CustomAuthenticationProvider.class
+    ¦           ¦       JwtAuthenticationFilter.class
+    ¦           ¦       JwtUtils.class
+    ¦           ¦       
+    ¦           +---service
+    ¦                   AuthenticationService.class
+    ¦                   CategoryService.class
+    ¦                   DietTypeService.class
+    ¦                   IngredientService.class
+    ¦                   RecipeService.class
+    ¦                   UserService.class
+    ¦                   
+    +---generated-sources
+        +---annotations
