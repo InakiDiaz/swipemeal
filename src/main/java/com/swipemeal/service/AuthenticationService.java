@@ -31,15 +31,15 @@ public class AuthenticationService {
         this.jwtUtils = jwtUtils;
     }
 
-    public AuthResponse register(RegisterRequest req) {
-        if (userRepo.findByUsername(req.username()).isPresent()) {
+    public AuthResponse register(RegisterRequest registerRequest) {
+        if (userRepo.findByUsername(registerRequest.username()).isPresent()) {
             throw new RuntimeException("El usuario ya existe");
         }
 
         User user = new User();
-        user.setUsername(req.username());
-        user.setPassword(passwordEncoder.encode(req.password()));
-        user.setRole(Role.USER); // O el rol que uses en tu proyecto
+        user.setUsername(registerRequest.username());
+        user.setPassword(passwordEncoder.encode(registerRequest.password()));
+        user.setRole(Role.USER);
 
         userRepo.save(user);
 
@@ -51,9 +51,9 @@ public class AuthenticationService {
         );
     }
 
-    public AuthResponse login(AuthRequest req) {
+    public AuthResponse login(AuthRequest authRequest) {
         Authentication auth = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(req.username(), req.password())
+                new UsernamePasswordAuthenticationToken(authRequest.username(), authRequest.password())
         );
 
         User user = (User) auth.getPrincipal(); // Ya autenticado

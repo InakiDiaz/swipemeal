@@ -11,8 +11,8 @@ public class IngredientDTO {
     private Long id;
     private String name;
 
-    public static IngredientDTO fromEntity(Ingredient ingredient) {
-        return IngredientDTO.builder()
+    public IngredientDTO (Ingredient ingredient) {
+        IngredientDTO.builder()
                 .id(ingredient.getId())
                 .name(ingredient.getName())
                 .build();

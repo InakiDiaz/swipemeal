@@ -26,7 +26,7 @@ public class RecipeDTO {
                 .category(CategoryDTO.fromEntity(recipe.getCategory()))
                 .dietType(DietTypeDTO.fromEntity(recipe.getDietType()))
                 .ingredients(recipe.getIngredients().stream()
-                        .map(IngredientDTO::fromEntity)
+                        .map(IngredientDTO::new)
                         .collect(Collectors.toList()))
                 .build();
     }

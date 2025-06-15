@@ -1,5 +1,6 @@
 package com.swipemeal.dto;
 
+import com.swipemeal.model.DietType;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 

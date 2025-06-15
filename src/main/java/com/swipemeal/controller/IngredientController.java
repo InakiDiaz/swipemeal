@@ -23,12 +23,9 @@ public class IngredientController {
         Ingredient ingredient = new Ingredient();
         ingredient.setName(request.getName());
 
-        Ingredient saved = ingredientService.save(ingredient);
+        Ingredient ingredientSaved = ingredientService.save(ingredient);
 
-        IngredientDTO dto = IngredientDTO.builder()
-                .id(saved.getId())
-                .name(saved.getName())
-                .build();
+        IngredientDTO dto = new IngredientDTO(ingredientSaved);
 
         return ResponseEntity.ok(dto);
     }
@@ -36,10 +33,7 @@ public class IngredientController {
     @GetMapping
     public ResponseEntity<List<IngredientDTO>> getAll() {
         List<IngredientDTO> list = ingredientService.findAll().stream()
-                .map(i -> IngredientDTO.builder()
-                        .id(i.getId())
-                        .name(i.getName())
-                        .build())
+                .map(IngredientDTO::new)
                 .toList();
 
         return ResponseEntity.ok(list);
